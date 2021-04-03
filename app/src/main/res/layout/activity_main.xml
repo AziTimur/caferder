@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightBrown"
+    android:orientation="vertical"
+    android:windowNoTitle="true"
+    >
+
+    <ImageView
+        android:id="@+id/logoimg"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/lightBrown"
+        android:contentDescription="@string/logo_description"
+        app:srcCompat="@drawable/img1" />
+
+    <TextView
+        android:id="@+id/textPrvt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:textColor="@color/white"
+        android:layout_marginTop="16dp"
+        android:textSize="32dp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:text="@string/Welcome" />
+
+    <EditText
+        android:id="@+id/txtName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="@string/hint_name" />
+
+    <EditText
+        android:id="@+id/txtPswd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:ems="10"
+        android:hint="@string/hint_password" />
+
+    <Button
+        android:id="@+id/btnzakaz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:background="@color/darkBrown"
+        android:onClick="onClickzakaz"
+        android:textSize="24dp"
+        android:text="@string/button_creat_order" />
+</LinearLayout>
+
